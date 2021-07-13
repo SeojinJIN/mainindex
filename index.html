@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>웹퍼블리셔 과정 - 서진</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+            body{
+                background: url(./intro_img/KakaoTalk_20210421_162751312.jpg) no-repeat center/cover;
+        }
+        /* 전체부모박스 */
+        .wrap{
+            width: 1200px;
+            border: 2px solid #ccc;
+
+            /* 블록박스 가로중앙정렬 - 마영오씨! */
+            margin:20px auto;
+            /* 마진: 위아래0 양쪽auto */
+            padding: 20px;
+
+            /* float으로 인한 높이값 상실처리 */
+            overflow: hidden;
+            box-sizing: border-box;
+            /* 크기유지박스 */
+            background-color: #ebf9ffc0;
+            min-height: 700px;
+            /* 최소높이값(많아지면 늘어남!) */
+            border-radius: 10px;
+        }
+
+        /* 타이틀 */
+        #tit{
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        /* 프로젝트 박스 공통 */
+        .pjbx{
+            width: 50%;
+            float: left;
+            padding: 15px;
+            /* 
+                50%로 옆으로 흐르면 
+                2개의 블록박스가 나란히 오는데
+                이때 패딩을 주면 박스가 커지므로
+                하나가 아래로 내려간다
+                (50%넘으므로!)
+                이때 해결책!!!
+                보더나 패딩이 지정한 사이즈
+                내부로 포함되게 하는속성이 있다
+                box-sizing:border-box
+             */
+             box-sizing: border-box;
+             /* 기본값은 content-box(커지는박스) */
+        }
+
+        /* 각 박스의 ol리스트 */
+        .pjbx>ol{
+            font-size: 24px;
+            line-height: 40px;
+        }
+        /* 각 박스의 a링크 */
+        .pjbx a{
+            color: darkblue;
+            text-decoration: none;
+        }
+        /* 오버시 */
+        .pjbx a:hover{
+            color: darkorange;
+            text-decoration: overline;
+            /* 윗줄 */
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 id="tit">웹퍼블리셔과정 - 서진</h1>
+
+        <div class="pjbx cpj">
+            <h2>공통 프로젝트</h2>
+            <ol>
+                <li>
+                    <!-- <a href="./001.Info_PJ/" target="_blank">네이버 요약 뉴스</a> -->
+                    <!--<a href="http://tjwls8761.dothome.co.kr/001.Info_PJ/" target="_blank">네이버 요약 뉴스</a>-->
+                   <a href="01.info_PJ/index.html" target="_blank">네이버 요약 뉴스</a>
+                </li>
+                <li>
+                    <a href="./002.Drama_PJ/Dokkaebi.html" target="_blank">도깨비 캐릭터 소개 사이트</a>
+                </li>
+                <li>
+                    <a href="./003.Robot_PJ/robot.html" target="_blank">로봇 PJ</a>
+                </li>
+                <li>
+                    <a href="./003.Robot_PJ/avengers.html" target="_blank">어벤저스PJ</a>
+                </li>
+                <li>
+                    <a href="./003.Robot_PJ/fixedBG.html" target="_blank">fixed BG</a>
+                </li>
+                <li>
+                    <a href="./004.CGV_PJ/003.site/intro.html" target="_blank">CGV PJ</a>
+                </li>
+                <li>
+                    <a href="./007.WebDiary_PJ/index.html" target="_blank">WebDiary PJ</a>
+                </li>
+                <li>
+                    <a href="./020.simpson/simpson.html" target="_blank">simpson</a>
+                </li>
+                <li>
+                    <a href="./008.SeoulLand_PJ/asset/index.html" target="_blank">서울랜드</a>
+                </li>
+                <li>
+                    <a href="./022.CubeTrip/index.html" target="_blank">큐브</a>
+                </li>
+                <li>
+                    <a href="023.onepage/onePage_autoScroll_moblie.html" target="_blank">스크롤</a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="pjbx mpj">
+            <h2>개인 프로젝트</h2>
+            <ol>
+                <li>
+                    <a href="./myDok/TITANLC.html" target="_blank">도깨비응용과제</a>
+                </li>
+                <li>
+                    <a href="./myCGV/icecream.html" target=" _blank">CGV응용과제</a>
+                </li>
+                <li>
+                    <a href="popol/CGV_popol.html" target=" _blank">CGV1차포폴</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
